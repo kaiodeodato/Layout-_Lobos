@@ -1,0 +1,274 @@
+body,ul,li,p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: arial;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    transition: .5s;
+}
+
+.header {
+    height: 60px;
+    background-color: rgb(34, 34, 34);
+    top: 0px;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 100;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.logo:hover {
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.288));
+}
+
+p {
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+
+/* botao mobile */
+
+#btn-mobile {
+    display: none;
+}
+
+#menu {
+    display: flex;
+    width: 100%;
+    transition: .6s;
+    z-index: 100;
+    padding: 20px;
+}
+
+#menu a {
+    padding: 15px;
+}
+
+#menu a:hover{
+    background: rgba(236, 236, 236, 0.103);
+}
+
+
+@media (max-width: 600px) {
+    #btn-mobile {
+        display: block;
+        margin-right: 3rem;
+        height: 20px;
+        width: 50px;
+        font-size: 1rem;
+        transform: scale(1.4);
+        border: none;
+        background: none; 
+        cursor: pointer;
+        color: rgb(207, 207, 207);
+    }
+    #menu {
+        padding-top: 50px;
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        right: 0px;
+        background-color: rgb(34, 34, 34);
+        height: 0px;
+        transition: .6s;
+        left: 0px;
+        opacity: 0%;
+        visibility: hidden;
+        overflow: hidden;
+        z-index: -50;
+    }
+    #menu li {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.075);
+    }
+
+    #nav.active #menu {
+        display: block;
+        height: 100vh;
+        visibility: visible;
+        opacity: 100%;
+    }
+
+    #menu a {
+    }
+}
+/* CSS FLEX BOX */
+
+#titulo {
+    text-align: center;
+    margin-top: 50px;
+    transition: .9s;
+}
+
+.tituloaumentado {
+    color: rgb(8, 122, 59);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+
+img:hover {
+    border-radius: 30px;
+    transform: scale(1.08);
+    filter:drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.788));
+}
+
+#legenda {
+    transition: .5s;
+    position: absolute;
+    z-index: 900;
+    transform: translatey(-20px) translatex(10px);
+    color: white;
+    opacity: 0;
+
+}
+
+img:hover - #titulo{
+    transform: scale(2);
+    
+}
+
+
+img:hover + #legenda{
+    transform: translatey(-40px) translatex(10px);
+    opacity: 100;
+}
+
+
+
+
+
+/* .bordainicio {
+    border-radius: 10px;
+    animation: ease-out;
+    animation-name: aumenta;
+    animation-duration: 1000ms;
+}
+
+.bordafim {
+    animation: ease-out;
+    border-radius: 30px;
+    animation-name: diminui;
+    animation-duration: 1000ms;
+} */
+
+
+/* @keyframes diminui {
+    0% {
+        border-radius: 10px;
+    }
+    100% {
+        border-radius: 30px;
+    }
+}
+
+@keyframes aumenta {
+    0% {
+        border-radius: 30px;
+    }
+    100% {
+        border-radius: 10px;
+    }
+} */
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex > div {
+    flex: 1 1 300px;
+    margin: 10px;
+    text-align: right;
+}
+
+.janelamodal {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.788);
+    z-index: 999;
+}
+
+.janelamodal.abrir {
+    display: flex;
+}
+
+.modal {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+}
+
+.fechar {
+    font-size: 18px;
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgb(233, 233, 233);
+    color: rgb(66, 66, 66);
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* Rodape */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(22, 22, 22);
+    align-items: center;   
+}
+
+.rodape a {
+    padding: 5px;
+}
+
+.menurodape {
+    display: flex;
+}
+
+.menurodape li{
+    padding: 5px;
+    margin: 5px;
+}
+.rodape a:hover {
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.288));
+}

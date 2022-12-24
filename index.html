@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>document</title>
+</head>
+<body>
+
+    <header class="header">
+        <a class="logo" id="logo" onmouseover="aumentotitulo()" href="https://www.google.com/">Lobo</a>
+        <nav id="nav">
+            <button id="btn-mobile" onclick="toggleMenu()">
+                Menu
+            <span id="humburguer"></span></button>
+            <ul class ="menu" id="menu">
+                <li><a href="https://www.google.com/">Sobre</a></li>
+                <li><a href="https://www.google.com/">Produtos</a></li>
+                <li><a href="https://www.google.com/">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+
+    <h1 id="titulo" >Section Flexbox</h1>
+
+    <section class="flex">
+        <div id="primeira" onclick="abrirmodal('foto1')">
+            <img id="foto1" src="img/lobo1.jpg">
+            <p id="legenda">Legenda</p>
+        </div>
+        <div onclick="abrirmodal('foto2')" >
+            <img id="foto2" src="img/lobo2.jpg">
+            <p id="legenda">Legenda 2</p>
+        </div>
+        <div onclick="abrirmodal('foto3')" >
+            <img  id="foto3" src="img/lobo3.jpg">
+            <p id="legenda">Legenda 3</p>
+        </div>
+        <div onclick="abrirmodal('foto4')" >
+            <img  id="foto4" src="img/lobo4.jpg">
+            <p id="legenda">Legenda 4</p>
+        </div>
+        <div onclick="abrirmodal('foto5')" >
+            <img  id="foto5" src="img/lobo5.jpg">
+            <p id="legenda">Legenda 5</p>
+        </div>
+        <div onclick="abrirmodal('foto6')" >
+            <img  id="foto6" src="img/lobo6.jpg">
+            <p id="legenda">Legenda 6</p>
+        </div>
+        <div onclick="abrirmodal('foto7')" >
+            <img  id="foto7" src="img/lobo7.jpg">
+            <p id="legenda">Legenda 7</p>
+        </div>
+        <div onclick="abrirmodal('foto8')">
+            <img  id="foto8" src="img/lobo8.jpg">
+            <p id="legenda">Legenda 8</p>
+        </div>
+        <div onclick="abrirmodal('foto9')" >
+            <img  id="foto9" src="img/lobo9.jpg">
+            <p id="legenda">Legenda 9</p>
+        </div>
+        <div onclick="abrirmodal('foto10')">
+            <img  id="foto10" src="img/lobo10.jpg">
+            <p id="legenda">Legenda 10</p>
+        </div>
+        <div onclick="abrirmodal('foto11')">
+            <img  id="foto11" src="img/lobo11.jpg">
+            <p id="legenda">Legenda 11</p>
+        </div>
+        <div onclick="abrirmodal('foto12')">
+            <img  id="foto12" src="img/lobo12.jpg">
+            <p id="legenda">Legenda 12</p>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <header class="rodape">
+        <a href="https://www.google.com/">Telefone</a>
+        <nav>
+            <ul class ="menurodape">
+                <li><a href="https://www.google.com/">Instagram</a></li>
+                <li><a href="https://www.google.com/">FaceBook</a></li>
+                <li><a href="https://www.google.com/">Site</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="janelamodal" id="janelamodal">
+        <div class="modal">
+            <button class="fechar" id="fechar">x</button>
+            <div id="fotoampliada">
+                <img id="imagem" src="">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
